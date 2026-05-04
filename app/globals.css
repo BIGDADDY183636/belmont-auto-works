@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-bebas);
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --color-charcoal: #1a1a1a;
+  --color-surface: #222222;
+  --color-border: #2e2e2e;
+  --color-light: #ededed;
+  --color-muted: #888888;
+  --color-accent: #d93025;
+  --color-accent-dark: #b82720;
+}
+
+/* ─── Reset ───────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #ededed;
+  overflow-x: hidden;
+  font-family: var(--font-dm-sans), ui-sans-serif, sans-serif;
+}
+
+/* ─── Grain overlay ───────────────────────────────────────────── */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: url("/noise.svg");
+  background-repeat: repeat;
+  background-size: 220px 220px;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+  animation: grain 8s steps(10) infinite;
+}
+
+/* ─── Keyframes ───────────────────────────────────────────────── */
+
+@keyframes grain {
+  0%,
+  100% { transform: translate(0, 0); }
+  10%  { transform: translate(-2%, -3%); }
+  20%  { transform: translate(3%, 1%); }
+  30%  { transform: translate(-1%, 4%); }
+  40%  { transform: translate(4%, -2%); }
+  50%  { transform: translate(-3%, 3%); }
+  60%  { transform: translate(1%, -4%); }
+  70%  { transform: translate(-4%, 2%); }
+  80%  { transform: translate(2%, -1%); }
+  90%  { transform: translate(3%, 4%); }
+}
+
+@keyframes pinPulse {
+  0%   { transform: scale(0.8); opacity: 0.55; }
+  100% { transform: scale(3.8); opacity: 0; }
+}
+
+/* ─── Utility classes ─────────────────────────────────────────── */
+
+.pin-pulse {
+  animation: pinPulse 2.4s ease-out infinite;
+}
+
+.pin-pulse-delayed {
+  animation: pinPulse 2.4s ease-out 0.9s infinite;
+}
