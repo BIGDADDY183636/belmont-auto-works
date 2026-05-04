@@ -20,7 +20,7 @@ import {
 
 const PHONE = "(773) 555-0142";
 const PHONE_HREF = "tel:+17735550142";
-const ADDRESS = "4218 W. Belmont Ave., Chicago, IL 60641";
+const ADDRESS = "4501 N. Western Ave., Chicago, IL 60625";
 
 const SERVICES = [
   {
@@ -237,7 +237,7 @@ function Hero() {
           className="mb-5 text-[11px] font-semibold uppercase tracking-[0.22em] text-accent"
           style={{ fontFamily: "var(--font-dm-sans)" }}
         >
-          Old Irving Park · Chicago, IL
+          Lincoln Square · Chicago, IL
         </p>
 
         {/* Headline */}
@@ -517,50 +517,53 @@ function DarkMap() {
       />
 
       {/* N–S streets */}
-      {/* Kedzie Ave */}
+      {/* Western Ave — main N-S */}
       <div
         className="absolute inset-y-0"
-        style={{ left: "30%", width: "4%", background: "#2c2c2c" }}
+        style={{ left: "30%", width: "5%", background: "#333333" }}
       />
-      {/* Kimball */}
+      {/* Damen Ave */}
       <div
         className="absolute inset-y-0"
         style={{ left: "54%", width: "3.5%", background: "#2c2c2c" }}
       />
-      {/* Pulaski */}
+      {/* Lincoln Ave */}
       <div
         className="absolute inset-y-0"
         style={{ left: "74%", width: "3%", background: "#2c2c2c" }}
       />
 
       {/* E–W streets */}
-      {/* Addison */}
+      {/* Wilson Ave */}
       <div
         className="absolute inset-x-0"
         style={{ top: "18%", height: "3%", background: "#2c2c2c" }}
       />
-      {/* Belmont Ave — main, wider */}
+      {/* Leland Ave */}
       <div
         className="absolute inset-x-0"
-        style={{ top: "46%", height: "6%", background: "#333333" }}
+        style={{ top: "46%", height: "4%", background: "#2c2c2c" }}
       />
-      {/* Diversey */}
+      {/* Lawrence Ave — main E-W */}
       <div
         className="absolute inset-x-0"
-        style={{ top: "70%", height: "3%", background: "#2c2c2c" }}
+        style={{ top: "64%", height: "5%", background: "#2c2c2c" }}
       />
-      {/* Fullerton */}
+      {/* Montrose */}
       <div
         className="absolute inset-x-0"
-        style={{ top: "86%", height: "3%", background: "#2c2c2c" }}
+        style={{ top: "84%", height: "3%", background: "#2c2c2c" }}
       />
 
-      {/* Belmont Ave label */}
+      {/* Western Ave label */}
       <div
         style={{
           position: "absolute",
-          top: "41%",
-          left: "3%",
+          left: "22%",
+          top: "50%",
+          transform: "rotate(-90deg) translateX(-50%)",
+          transformOrigin: "center center",
+          whiteSpace: "nowrap",
           fontSize: "7px",
           fontFamily: "var(--font-dm-sans)",
           color: "#555",
@@ -569,18 +572,15 @@ function DarkMap() {
           fontWeight: 700,
         }}
       >
-        W. Belmont Ave.
+        N. Western Ave.
       </div>
 
-      {/* Kedzie label */}
+      {/* Leland label */}
       <div
         style={{
           position: "absolute",
-          left: "23%",
-          top: "50%",
-          transform: "rotate(-90deg) translateX(-50%)",
-          transformOrigin: "center center",
-          whiteSpace: "nowrap",
+          top: "41%",
+          left: "3%",
           fontSize: "7px",
           fontFamily: "var(--font-dm-sans)",
           color: "#444",
@@ -589,10 +589,10 @@ function DarkMap() {
           fontWeight: 700,
         }}
       >
-        N. Kedzie Ave.
+        Leland
       </div>
 
-      {/* Pin — Belmont & just east of Kedzie (~4218 W Belmont) */}
+      {/* Pin — Western & Leland (~4501 N Western) */}
       <div
         className="absolute"
         style={{ left: "calc(34% - 8px)", top: "calc(49% - 8px)" }}
@@ -644,7 +644,7 @@ function DarkMap() {
           fontWeight: 700,
         }}
       >
-        Old Irving Park
+        Lincoln Square
       </div>
     </div>
   );
@@ -678,7 +678,7 @@ function HoursVisit() {
                 {ADDRESS}
                 <br />
                 <span className="text-[13px] text-light/35">
-                  Old Irving Park — easy off the Kennedy at Addison
+                  Lincoln Square — near the Western Brown Line stop
                 </span>
               </p>
             </div>
