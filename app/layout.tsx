@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Belmont Auto Works",
     description: "Honest work. Three generations on the North Side.",
-    url: "https://auto.jbardesign.studio",
+    url: "https://auto.jbar.studio",
     siteName: "Belmont Auto Works",
     locale: "en_US",
     type: "website",
