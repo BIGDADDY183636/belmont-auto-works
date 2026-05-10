@@ -792,6 +792,12 @@ function Footer() {
           >
             ASE-certified · Family-owned since 1998
           </p>
+          <p
+            className="text-[10px] italic text-light/12 mt-1 sm:mt-0 sm:text-right"
+            style={{ fontFamily: "var(--font-dm-sans)" }}
+          >
+            Concept build for JBAR Design Studio. Not a real business.
+          </p>
         </div>
       </div>
     </footer>
