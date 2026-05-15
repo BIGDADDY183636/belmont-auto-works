@@ -19,7 +19,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Belmont Auto Works — Honest work. Three generations on the North Side.",
   description:
-    "Family-owned auto repair shop in Old Irving Park, Chicago. ASE-certified technicians. No upselling. 12-month/12K-mile warranty on all work.",
+    "Family-owned auto repair shop in Lincoln Square, Chicago. ASE-certified technicians. No upselling. 12-month/12K-mile warranty on all work.",
   openGraph: {
     title: "Belmont Auto Works",
     description: "Honest work. Three generations on the North Side.",
